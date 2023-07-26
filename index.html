@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENGTH CONVERTER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <!-- first section -->
+    <div class="title-container">
+        <h2>LENGTH CONVERTER</h2>
+    </div>
+
+    <!-- 2nd section : amount to be converted -->
+    <div class="amount-container">
+        <label for="amount">Enter Amount</label>
+        <input type="number" name="amount" id="amount" value="0">
+    </div>
+
+    <!-- 3rd section : unit converter -->
+    <div class="unit-converter">
+        <!-- left -->
+        <div class="left">
+            <p>From :</p>
+            <div class="select-container">
+                <select name="from" id="from">
+                    <option value="Centimeter">Centimeter</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- middle -->
+        <div class="middle">
+            <i class="fa-solid fa-gear fa-spin" style="font-size: 31px;"></i>
+        </div>
+
+        <!-- right -->
+        <div class="right">
+            <p>To :</p>
+            <div class="select-container">
+                <select name="to" id="to">
+                    <option value="Centimeter">Centimeter</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4th section : formula display -->
+    <div class="formula-container">
+       <span class="title">Formula</span>
+        <span class="content">Lorem ipsum dolor sit amet consectetur.</span>
+    </div>
+
+    <!-- 5th section : result display -->
+    <div class="result-container">
+        <label for="result">Result</label>
+        <input type="text" name="result" class="result">
+    </div>
+  </main>
+
+  <script src="lengthFormula.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
